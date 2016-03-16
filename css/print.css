@@ -56,7 +56,7 @@ h2 {
 }
 
 a {
-    color: #3f3f3f;
+    color: #00446b;
     text-decoration: none;
 }
 
@@ -86,23 +86,23 @@ a {
 }
 
 .field--image img{
-    border-bottom: 5px solid #17858c;
+    border-bottom: 5px solid #00446b;
 }
 
 .is-dagtilbud  .field--image img{
-    border-bottom: 5px solid #a4da20;
+    border-bottom: 5px solid #aec000;
 }
 
 .is-grundskole .field--image img {
-    border-bottom: 5px solid #901d7c;
+    border-bottom: 5px solid #dc6a02;
 }
 
 .is-ungdomsuddannelse .field--image img {
-    border-bottom: 5px solid #ff6800;
+    border-bottom: 5px solid #008d9d;
 }
 
 .is-course .field--image img {
-    border-bottom: 5px solid #edd71c;
+    border-bottom: 5px solid #ffcb05;
 }
 
 
@@ -137,14 +137,14 @@ a {
 /* Blocks */
 
 .block--light {
-    background: #deeced;
+    background: #f2f2f2;
     display: block;
     margin-bottom: 10px;
     padding: 20px;
 }
 
 .block--dark {
-    background: #17858c;
+    background: #d9d9d9;
     color: #fff;
     display: block;
     margin-bottom: 20px;
@@ -207,7 +207,7 @@ a {
 
 .field--collection-label {
     color: white;
-    background: #17858c;
+    background: #00446b;
     padding: 10px;
 }
 

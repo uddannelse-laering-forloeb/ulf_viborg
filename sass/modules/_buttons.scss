@@ -1,0 +1,62 @@
+/**
+ *
+ * Buttons
+ *
+ * Display of buttons on the site.
+ *
+ */
+
+
+/* Placeholders, variables and mixins related to this document only. @todo cleanup.
+================================================================================================================== */
+
+
+/* Styles.
+================================================================================================================== */
+
+%button {
+  position: relative;
+
+  border: 1px solid $link-color;
+  display: inline-block;
+  padding: .4em 1.5em;
+
+  background-color: $link-color;
+  color: $white;
+  cursor: pointer;
+  font-size: 100%;
+  text-align: center;
+
+  &:focus,
+  &:hover,
+  &:active {
+    text-decoration: none;
+  }
+}
+
+
+/* Styles.
+================================================================================================================== */
+
+.form-submit,
+.button {
+  @extend %button;
+
+  background-color: $link-color;
+  border: 1px solid $link-color;
+  color: $white;
+
+  @include strip-link-styles($white);
+
+  &:hover {
+    background-color: $link-color;
+  }
+
+  &:link {
+    color: $white;
+    text-decoration: none;
+  }
+
+
+  border-radius: $border-radius;
+}

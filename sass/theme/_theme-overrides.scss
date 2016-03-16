@@ -1,0 +1,423 @@
+/**
+ * Overrides
+ *
+ * Theme specific overrides
+ *
+ */
+
+
+/* Default file: base/_base.scss
+================================================================================================================== */
+body {
+  background: $gray-darkest;
+  color: #333;
+}
+
+
+a {
+  &:link {
+    color: $link-color;
+    text-decoration: underline;
+  }
+
+  &:visited {
+    color: darken($link-color, 5%);
+  }
+
+  &:hover {
+    color: $link-color-hover;
+    text-decoration: none;
+  }
+
+  &:focus {
+    color: darken($link-color, 10%);
+  }
+}
+
+/* Default file: modules/_footer.scss
+================================================================================================================== */
+
+.footer {
+  background: $gray-darkest;
+  color: $white;
+
+  // Content elements in footer is editable by editors. We set some defaults.
+  hr {
+    border-color: $white;
+  }
+
+  a {
+    @include strip-link-styles($white, underline);
+  }
+}
+
+
+
+.footer--eu-compliance-text {
+  color: $white;
+}
+
+// Horrible nesting. (HTML from module)
+#sliding-popup {
+  .popup-content {
+    #popup-buttons {
+      button {
+        background: $link-color;
+        color: $white;
+
+        &:hover {
+          background: $link-color;
+        }
+      }
+    }
+  }
+}
+
+
+/* Default file: modules/_field.scss
+================================================================================================================== */
+.field {
+
+  /* Display of node title. */
+  &--title {
+    @include background-set-color('default', 0.7);
+
+    &.is-dagtilbud {
+      border-color: $daycare-color;
+    }
+
+    &.is-grundskole {
+      border-color: $school-color;
+    }
+
+    &.is-ungdomsuddannelse {
+      border-color: $youth-color;
+    }
+
+    &.is-course {
+      border-color: $course-color;
+    }
+
+    &.is-profile {
+      border-color: $link-color;
+    }
+  }
+
+  &--collection-label {
+    color: $white;
+    background: $link-color;
+  }
+}
+
+
+/* Default file: modules/_nav.scss
+================================================================================================================== */
+
+.nav--static-pages.is-node {
+  & .nav--static-pages-item {
+    a {
+      @include strip-link-styles($link-color);
+    }
+  }
+}
+
+
+/* Default file: modules/_block.scss
+================================================================================================================== */
+
+.block--dark {
+  @extend %block;
+
+  background: $gray-light;
+  color: $white;
+
+  a {
+    @include strip-link-styles($white, underline);
+  }
+}
+
+.block--light {
+  @extend %block;
+
+  background: $gray-lightest;
+
+  a {
+    @include strip-link-styles($link-color, underline);
+  }
+}
+
+.block--pdf {
+  &-link {
+    @extend %button;
+
+    @include strip-link-styles($white);
+  }
+}
+
+
+/* Default file: modules/_header.scss
+================================================================================================================== */
+
+.header {
+  background: $white;
+
+  &--toggle-mobile-nav {
+    background: none;
+  }
+}
+
+
+/* Default file: modules/_search.scss
+================================================================================================================== */
+.search {
+
+  // Widget display.
+  &--widget {
+    background: $gray-lightest;
+    color: rgba(0, 0, 0, 0.5);
+
+    &.is-daycare,
+    &.is-daycare .search--filter-dropdown,
+    &.is-daycare .search--filter-dropdown-submit,
+    &.is-daycare .search--widget-selected,
+    &.is-daycare .search--filter-search-submit {
+      @include background-set-color('daycare', $transparency: 1);
+
+      border-color: $daycare-color;
+    }
+
+    &.is-school,
+    &.is-school .search--filter-dropdown,
+    &.is-school .search--filter-dropdown-submit,
+    &.is-school .search--widget-selected,
+    &.is-school .search--filter-search-submit {
+      @include background-set-color('school', $transparency: 1);
+
+      border-color: $school-color;
+    }
+
+    &.is-youth,
+    &.is-youth .search--filter-dropdown,
+    &.is-youth .search--filter-dropdown-submit,
+    &.is-youth .search--widget-selected,
+    &.is-youth .search--filter-search-submit {
+      @include background-set-color('youth', $transparency: 1);
+
+      border-color: $youth-color;
+    }
+
+    &.is-course,
+    &.is-course .search--filter-dropdown,
+    &.is-course .search--filter-dropdown-submit,
+    &.is-course .search--widget-selected,
+    &.is-course .search--filter-search-submit {
+      @include background-set-color('course', $transparency: 1);
+
+      border-color: $course-color;
+    }
+  }
+
+
+  &--filter-wrapper-user {
+    background: $gray-darker;
+  }
+
+
+  &--filter-wrapper-inner {
+    background: rgba(255,255,255, .85);
+  }
+
+
+  &--filter-search-text[type="text"] {
+    border: 1px solid $gray-light;
+  }
+
+  &--filter-search-submit[type="submit"] {
+    @extend %button;
+
+    padding: .4em 1.5em;
+    max-width: 35%;
+    position: absolute;
+    right: 0;
+  }
+
+
+
+  // The span filter. Two text fields to span a value.
+  &--filter-span {
+    &-text[type="text"] {
+      border: 1px solid $gray-light;
+    }
+  }
+
+
+  &--filter-label {
+    @include strip-link-styles(rgba(0, 0, 0, 0.5));
+  }
+
+
+  // The filter dropdown for filter lists.
+  &--filter-dropdown {
+    box-shadow: 3px 3px 6px $gray-dark;
+
+    &-inner {
+      background: rgba(255,255,255, .85);
+    }
+
+
+    &-submit {
+      @extend %button;
+
+      display: block;
+      margin: $spacing;
+      font-size: .9em;
+      padding: .1em 2em;
+
+      @include strip-link-styles($white);
+    }
+
+    .disabled {
+      color: rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  // Mobile show/hide
+  &--widget-filters {
+    background: $gray-lightest;
+  }
+
+  // Selected facets
+  &--widget-selected {
+    background: $white;
+  }
+
+  &--widget-selected-item {
+    @extend %button;
+
+    background-color: rgba(255, 255, 255, .85);
+    border-color: rgba(255, 255, 255, .85);
+    color: $gray;
+  }
+
+  &--reset {
+    color: $gray-darkest;
+  }
+}
+
+.search-results {
+  &--result {
+    @extend %teaser--wrapper;
+  }
+}
+
+
+// Specific texts need dark color.
+.is-course .search--filter-search-submit,
+.is-daycare .search--filter-search-submit {
+  color: $gray-darkest;
+}
+
+
+/* Default file: modules/_teaser.scss
+================================================================================================================== */
+
+/* Teaser representing a target group. */
+.teaser--group {
+  &-inner {
+
+    @include strip-link-styles($white);
+
+    // Change text background transparency when hovering on the teaser.
+    // State class names are fetched from taxonomy terms, thus Danish ...
+    &:hover .teaser--group-text {
+      &.is-dagtilbud {
+        @include background-set-color('daycare', 1);
+      }
+
+      &.is-grundskole {
+        @include background-set-color('school', 1);
+      }
+
+      &.is-ungdomsuddannelse {
+        @include background-set-color('youth', 1);
+      }
+
+      &.is-course {
+        @include background-set-color('course', 1);
+      }
+    }
+  }
+
+  &-text {
+    @extend %content--header;
+
+    height: 90px;
+
+    &.is-dagtilbud {
+      @include background-set-color('daycare', 0.7);
+    }
+
+    &.is-grundskole {
+      @include background-set-color('school', 0.7);
+    }
+
+    &.is-ungdomsuddannelse {
+      @include background-set-color('youth', 0.7);
+    }
+
+    &.is-course {
+      @include background-set-color('course', 0.7);
+    }
+  }
+}
+
+
+// Header above a list of teaser.
+.teaser--content-header {
+  background-color: $gray-lightest;
+}
+
+
+// Teaser display.
+.teaser {
+  @extend %teaser--wrapper;
+
+  background: $white; // For news.
+}
+
+
+.teaser--list-button {
+  @extend .button;
+
+  margin: 0 auto; // Center buttons.
+}
+
+
+/* Default file: patterns/_ribbon.scss
+================================================================================================================== */
+.is-dagtilbud {
+  .ribbon {
+    @include background-set-color('daycare', 1);
+  }
+}
+
+.is-grundskole {
+  .ribbon {
+    @include background-set-color('school', 1);
+  }
+}
+
+.is-ungdomsuddannelse {
+  .ribbon {
+    @include background-set-color('youth', 1);
+  }
+}
+
+.ribbon a,
+.ribbon a:hover {
+  /* Set the text properties */
+  color: $white;
+  text-decoration: none;
+  border-color: #fff;
+  border-color: rgba(255, 255, 255, 0.7);
+}
