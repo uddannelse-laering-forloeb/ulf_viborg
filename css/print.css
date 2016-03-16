@@ -56,7 +56,11 @@ h2 {
 }
 
 a {
+<<<<<<< HEAD
     color: #00446b;
+=======
+    color: #3f3f3f;
+>>>>>>> 9d089094dcce18ab95b82e956ad2b6ad1979cb6a
     text-decoration: none;
 }
 
@@ -86,6 +90,7 @@ a {
 }
 
 .field--image img{
+<<<<<<< HEAD
     border-bottom: 5px solid #00446b;
 }
 
@@ -103,6 +108,25 @@ a {
 
 .is-course .field--image img {
     border-bottom: 5px solid #ffcb05;
+=======
+    border-bottom: 5px solid #17858c;
+}
+
+.is-dagtilbud  .field--image img{
+    border-bottom: 5px solid #a4da20;
+}
+
+.is-grundskole .field--image img {
+    border-bottom: 5px solid #901d7c;
+}
+
+.is-ungdomsuddannelse .field--image img {
+    border-bottom: 5px solid #ff6800;
+}
+
+.is-course .field--image img {
+    border-bottom: 5px solid #edd71c;
+>>>>>>> 9d089094dcce18ab95b82e956ad2b6ad1979cb6a
 }
 
 
@@ -137,14 +161,22 @@ a {
 /* Blocks */
 
 .block--light {
+<<<<<<< HEAD
     background: #f2f2f2;
+=======
+    background: #deeced;
+>>>>>>> 9d089094dcce18ab95b82e956ad2b6ad1979cb6a
     display: block;
     margin-bottom: 10px;
     padding: 20px;
 }
 
 .block--dark {
+<<<<<<< HEAD
     background: #d9d9d9;
+=======
+    background: #17858c;
+>>>>>>> 9d089094dcce18ab95b82e956ad2b6ad1979cb6a
     color: #fff;
     display: block;
     margin-bottom: 20px;
@@ -207,7 +239,11 @@ a {
 
 .field--collection-label {
     color: white;
+<<<<<<< HEAD
     background: #00446b;
+=======
+    background: #17858c;
+>>>>>>> 9d089094dcce18ab95b82e956ad2b6ad1979cb6a
     padding: 10px;
 }
 
