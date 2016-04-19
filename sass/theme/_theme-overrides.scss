@@ -118,7 +118,7 @@ a {
 ================================================================================================================== */
 
 .nav--static-pages.is-node {
-  & .nav--static-pages-item {
+  & .nav--list-item-sub {
     a {
       @include strip-link-styles($link-color);
     }
