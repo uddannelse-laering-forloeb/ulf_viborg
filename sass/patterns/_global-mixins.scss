@@ -1,0 +1,60 @@
+/**
+ *
+ * Global mixins.
+ *
+ * Contains global mixins for use across the site.
+ *
+ */
+
+
+/* Styles
+   ========================================================================== */
+
+// Strip all link styles default color of links to inherit.
+@mixin strip-link-styles($color:inherit, $decoration: none) {
+  &:link {
+    color: $color;
+    text-decoration: $decoration;
+  }
+
+  &:visited {
+    color: $color;
+    text-decoration: $decoration;
+  }
+
+  &:hover {
+    color: $color;
+    text-decoration: $decoration;
+  }
+
+  &:focus {
+    color: $color;
+    text-decoration: $decoration;
+  }
+}
+
+
+// Set the color of the background to one of 4 different colors.
+@mixin background-set-color($type, $transparency: 1) {
+  @if $type == "daycare" {
+    background: rgba($daycare-color, $transparency);
+  }
+  @else if $type == "school" {
+    background: rgba($school-color, $transparency)
+  }
+  @else if $type == "youth" {
+    background: rgba($youth-color, $transparency);
+  }
+  @else if $type == "default" {
+    background: rgba(255, 255, 255, $transparency);
+  }
+  @else if $type == "course" {
+    background: rgba($course-color, $transparency);
+  }
+}
+
+
+// Set breakpoints.
+@mixin breakpoint($breakpoint) {
+  @media only screen and (min-width: $breakpoint) { @content; }
+}

@@ -1,0 +1,6 @@
+name = Ulf i Viborg
+version = VERSION
+core = 7.x
+base theme = ulf_default
+
+stylesheets[all][] = css/ulf-styles-viborg.css
