@@ -159,14 +159,9 @@ a {
 }
 
 .block--newsletter.is-front .form-type-emailfield {
-  & > label {
-    display: block;
-  }
-
   & > input {
     margin-bottom: $boxlist-padding;
   }
-
 }
 
 /* Default file: modules/_header.scss
