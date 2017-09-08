@@ -1,4 +1,7 @@
-#ULF changelog
+#Viborg theme changelog
+
+#2.5.9
+* Added siteimprove
 
 #2.5.0
 * ULF Base release
