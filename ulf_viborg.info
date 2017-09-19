@@ -4,5 +4,3 @@ core = 7.x
 base theme = ulf_default
 
 stylesheets[all][] = css/ulf-styles-viborg.css
-
-scripts[] = scripts/min/siteimprove-min.js

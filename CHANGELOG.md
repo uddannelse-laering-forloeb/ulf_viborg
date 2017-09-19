@@ -1,5 +1,9 @@
 #Viborg theme changelog
 
+
+#2.5.10
+* changed siteimprove
+
 #2.5.9
 * Added siteimprove
 
