@@ -130,8 +130,6 @@ a {
 ================================================================================================================== */
 
 .block--dark {
-  @extend %block;
-
   background: $gray-light;
   color: $white;
 
@@ -141,8 +139,6 @@ a {
 }
 
 .block--light {
-  @extend %block;
-
   background: $gray-lightest;
 
   a {
@@ -366,8 +362,6 @@ a {
   }
 
   &-text {
-    @extend %content--header;
-
     height: 90px;
 
     &.is-dagtilbud {
