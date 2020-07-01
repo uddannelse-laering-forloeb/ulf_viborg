@@ -76,7 +76,7 @@ a {
 }
 
 .content--image {
-    padding-bottom: 60px;
+    padding-bottom: 30px;
     position: relative;
     width: 100%;
 }
@@ -101,26 +101,6 @@ a {
     border-bottom: 5px solid #ffcb05;
 }
 
-
-.field--title {
-    position: absolute;
-    font-size: 30px;
-    bottom: 0;
-}
-
-.content--main {
-    float: left;
-    position: relative;
-    width: 50%;
-}
-
-.content--meta {
-    float: right;
-    position: relative;
-    width: 45%;
-}
-
-
 /* Elements */
 .field--image img {
     width: 700px;
@@ -137,14 +117,15 @@ a {
     display: block;
     margin-bottom: 10px;
     padding: 20px;
+    page-break-inside: avoid;
 }
 
 .block--dark {
     background: #d9d9d9;
-    color: #fff;
     display: block;
     margin-bottom: 20px;
     padding: 20px;
+    page-break-inside: avoid;
 }
 
 .block--dark .is-full-width {
