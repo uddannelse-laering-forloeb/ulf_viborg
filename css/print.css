@@ -81,25 +81,25 @@ a {
     width: 100%;
 }
 
-.field--image img{
-    border-bottom: 5px solid #00446b;
-}
+/*.field--image img{*/
+/*    border-bottom: 5px solid #00446b;*/
+/*}*/
 
-.is-dagtilbud  .field--image img{
-    border-bottom: 5px solid #aec000;
-}
+/*.is-dagtilbud  .field--image img{*/
+/*    border-bottom: 5px solid #aec000;*/
+/*}*/
 
-.is-grundskole .field--image img {
-    border-bottom: 5px solid #dc6a02;
-}
+/*.is-grundskole .field--image img {*/
+/*    border-bottom: 5px solid #dc6a02;*/
+/*}*/
 
-.is-ungdomsuddannelse .field--image img {
-    border-bottom: 5px solid #008d9d;
-}
+/*.is-ungdomsuddannelse .field--image img {*/
+/*    border-bottom: 5px solid #008d9d;*/
+/*}*/
 
-.is-course .field--image img {
-    border-bottom: 5px solid #ffcb05;
-}
+/*.is-course .field--image img {*/
+/*    border-bottom: 5px solid #ffcb05;*/
+/*}*/
 
 /* Elements */
 .field--image img {
@@ -111,7 +111,6 @@ a {
 }
 
 /* Blocks */
-
 .block--light {
     background: #f2f2f2;
     display: block;
